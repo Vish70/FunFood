@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fun Food</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="main_container">
+            <header>
+
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <nav>
+                    <ul class="ul_list" id="ul_list">
+                        <li class="list">
+                            <a href="#" class="active">Home</a>
+                        </li>
+                        <li class="list">
+                            <a href="#">Categorie</a>
+                        </li>
+                        <li class="list">
+                            <a href="#">Food</a>
+                        </li>
+                        <li class="list">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="list">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cart_heart_section">
+
+                    <div class="burger">
+                        <img src="img/menubar.png" class="menubar"
+                            alt="menubar">
+                    </div>
+
+                    <div class="heart heart_cart">
+                        <img src="img/heart.png" class="icon" alt="heart">
+                        <span>4</span>
+                    </div>
+                    <div class="cart heart_cart">
+                        <img src="img/cart.png" class="icon" alt="cart">
+                        <span>4</span>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- ///// hero section ///// -->
+
+        <div class="container">
+            <div class="hero_img_berry">
+                <img src="img/berrey.png" alt="berry">
+
+                <div class="hero_text">
+                    <h1>FUN <span class="orange_color_food">FOOD</span>
+                        <br><span class="restaurant"> RESTAURANT </span></h1>
+                    <span class="leaf"><img src="img/leaf.png"
+                            alt="leaf"></span>
+                </div>
+            </div>
+            <div class="hero_img">
+                <img src="img/hero_img.png" alt="hero_img">
+            </div>
+        </div>
+
+        <!-- ///// Categorie section ///// -->
+
+        <div class="conatiner_categorie"></div>
+
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+
+        $('.menubar').click(function(){
+            $('.ul_list').toggleClass('active');
+        })
+
+        // var nav = document.getElementById('ul_list');
+        // function menu() {
+        //     nav.classList.toggle('active');
+        // };
+   
+    </script>
+
+</html>
