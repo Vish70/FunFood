@@ -15,7 +15,7 @@
     --orange:#ff6600;
     --white:#fff;
     --black:#000;
-    --lightgrey:#cccccc;
+    --lightgrey:#e6e6e6;
 
 }
 /* .main_container{
@@ -114,8 +114,20 @@ padding-right:1rem;
     align-items: center;
     margin: auto;
     width:95%;
-    padding:1rem 2rem;
+    padding:2rem 2rem;
     /* margin:1rem 3rem; */
+}
+.main{
+    position:relative;
+}
+.main::before{
+    content: '';
+    position:absolute;
+    background-color: var(--orange);
+    opacity:0.2;
+    /* z-index: -1000; */
+    width:100%;
+	height:100%;
 }
 
 .hero_img_berry > img{
@@ -178,6 +190,191 @@ padding-right:1rem;
 
 /* ///////  Categorie section   /////// */
 
+.conatiner_categorie{
+    background-color:var(--lightgrey);
+    height:100%;
+    padding:10px;
+
+}
+.name{
+    display:flex;
+    align-items: center;
+    grid-gap:1rem;
+}
+.name span{
+    width:150px;
+    height:2px;
+    background-color:var(--orange);
+}
+
+.form_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+    outline:none;
+    border:none;
+    border:1px solid rgb(192, 192, 192);
+    /* padding:8px; */
+    width:530px;
+    position: relative;
+}
+
+[type=text]{
+padding:5px;
+}
+
+.search_bar{
+    position: absolute;
+    right:1rem;
+    width:20px;
+    top:.5rem;
+}
+.searchbtn{
+    position: absolute;
+    border: none;
+    outline: none;
+}
+
+.categorie_section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:var(--white);
+    height:50px !important;
+    width:100% !important;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
+    padding:30px;
+    margin:0px 5px;
+}
+.categ_food_1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    grid-template-rows:repeat(2,1fr);
+    place-items:center;
+    align-items: center;
+    width:100%;
+    margin:1rem auto;
+    grid-gap:.5rem;
+}
+.categ_food_1 img:hover{
+    border:3px solid white;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    /* width:20px;
+    height:20px; */
+}
+.categ_food_1 img{
+    width:190px;
+    height:190px;
+    cursor: pointer;
+}
+
+/* /////  Mennu ///// */
+
+.name{
+    display:flex;
+    align-items: center;
+    grid-gap:1rem;
+}
+.name h2{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.name span{
+    width:150px;
+    height:2px;
+    background-color:var(--orange);
+}
+
+.menu_section{
+    padding:30px;
+    margin:0px 5px;
+}
+
+.menu_card{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    grid-template-rows:repeat(2,1fr);
+    place-items:center;
+    align-items: center;
+    width:98%;
+    margin: 2rem auto;
+    grid-gap:1rem;
+}
+
+.card_img img{
+width:150px;
+height:150px;
+}
+
+
+.menu{
+    background-color:white;
+    box-shadow:0px 0px 3px 2px rgba(0,0,0,0.2);
+    padding:1rem 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+    height:100%;
+}
+.menu:hover{
+    outline: 1px solid var(--orange);
+}
+
+.crt_hert{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.crt_hert i{
+    font-size:1.2rem;
+    color: var(--orange);
+}
+
+
+.buynow_btn{
+    text-align: center;
+    border: none;
+    outline: none;
+    padding:.3rem .9rem;
+    margin-top:1rem;
+    font-weight:600;
+    font-size:1.1rem;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    background-color: var(--lightgrey);
+}
+.buynow_btn a{
+    text-decoration: none;
+    color:black;
+}
+
+.buynow_color{
+color: var(--orange);
+}
+
 
 
 /* //// media query //// */
@@ -208,6 +405,8 @@ padding-right:1rem;
 }
 
 
+
+
 @media screen and (max-width:942px){
     header .ul_list{
         display: flex;
@@ -216,6 +415,21 @@ padding-right:1rem;
         justify-content: space-between;
     }
 }
+
+
+@media screen and (max-width:900px){
+    .name span{
+        width:150px;
+        height:2px;
+        background-color:var(--orange);
+    }
+    
+    form input{
+        width:400px;
+    }
+    
+}
+
 
 
 @media screen and (max-width:830px){
@@ -271,6 +485,58 @@ padding-right:1rem;
 
 }
 
+
+@media screen and (max-width:778px){
+    .name span{
+        width:150px;
+        height:2px;
+        background-color:var(--orange);
+    }
+    
+    form input{
+        width:300px;
+    }
+    
+}
+
+
+@media screen and (max-width:674px){
+    .name span{
+        width:150px;
+        height:2px;
+        background-color:var(--orange);
+    }
+    
+    form input{
+        width:200px;
+    }
+    .name h2{
+        font-size: 18px;
+        font-weight: normal;
+    }
+}
+
+
+
+@media screen and (max-width:574px){
+    .name span{
+        width:50px;
+        height:2px;
+        background-color:var(--orange);
+    }
+    
+    form input{
+        width:200px;
+    }
+    .name h2{
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+
+
+
 @media screen and (max-width:480px){
     .container .hero_img img{
         width:335px;
@@ -292,4 +558,42 @@ padding-right:1rem;
         padding-right: 1rem;
     }
 
+}
+
+
+@media screen and (max-width:463px){
+    .name span{
+        width:50px;
+        height:2px;
+        background-color:var(--orange);
+    }
+    
+    form input{
+        width:150px;
+    }
+    .name h2{
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+
+@media screen and (max-width:381px){
+    .name span{
+        width:50px;
+        height:2px;
+        background-color:var(--orange);   
+    }
+    
+    .display_none_name{
+        display: none;
+    }
+
+    form input{
+        width:100%;
+    }
+    .name h2{
+        font-size: 16px;
+        font-weight: normal;
+    }
 }
