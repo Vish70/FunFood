@@ -624,7 +624,7 @@ color: var(--orange);
 }
 
 
-
+/* 
 @media screen and (max-width:400px) and (min-width:330px){
     .menu_card {
         display: grid;
@@ -654,7 +654,7 @@ color: var(--orange);
         .buynow_btn {
             font-size:1rem;
           }
-}
+} */
 
 
 
