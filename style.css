@@ -434,7 +434,7 @@ color: var(--orange);
 
 .about_section{
     /* position:absolute; */
-    background-image: url('/img/Ads-8.jpg');
+    background-image: url('../img/Ads-8.jpg');
     background-size: cover;
     background-position:center;
     width:100%;
